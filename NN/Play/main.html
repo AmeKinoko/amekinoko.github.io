@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Color Out of Space</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+    <div id="blackbox">
+    </div>
+    <a href=../index.html id="lkk"><img src="IMG/hd.png" id="hdd"></a>
+
+
+    <div id="sound" class="scene">
+
+            <audio loop id="bgm"
+         src="music.mp3" type="audio/mpeg">
+          It seems there will be no music for you.
+        </audio>
+
+        <p>Play audio?</p>
+
+        <button onclick="playAudio()" type="button" id="yesb">Yes.</button>
+
+          <script>
+            var x = document.getElementById("bgm");
+
+            function playAudio() {
+              x.play();
+            }
+            </script>
+
+
+
+      </div>
+
+
+
+    <div id="s1" class="scene">
+      <img src="IMG/house.png" class=img>
+      <p class="dec">You arrive at the Gardner house.
+        No smoke rises from the chimney.
+        It’s as quiet as the grave—not even a light breeze.</p>
+
+        <p id="choice1" class="link"><b>Approach the house.</b></p>
+
+      </div>
+
+      <div id="s2" class="scene">
+        <img src="IMG/branch.png" class=img>
+        <p class="dec">There’s a loud noise, and something lands on the ground next to you.
+          It appears a branch has spontaneously fallen from one of the trees.</p>
+
+          <p id="choice2" class="link l"><b>Pick it up.</b></p>
+          <p id="choice3" class="link r"><b>Leave it.</b></p>
+
+        </div>
+
+        <div id="s3" class="scene">
+          <img src="IMG/house.png" class=img>
+          <p class="dec">You pick up the tree branch. It might come in handy
+            later.</p>
+
+            <p  class="link choice4"><b>Enter the house.</b></p>
+
+          </div>
+
+          <div id="s4" class="scene">
+            <img src="IMG/house.png" class=img>
+            <p class="dec">Spooked by its sudden fall, you decide it would
+            be better not to touch it.</p>
+
+              <p class="link choice4"><b>Enter the house.</b></p>
+
+            </div>
+
+            <div id="s5" class="scene">
+              <img src="IMG/kitchen.png" class=img>
+              <p class="dec">You enter the house. It's empty except for Nahum.
+               He's lying on a couch in the kitchen, calling out to one of his sons:</p>
+               <p class="dec">"Zenas... put s'more wood on the fire..."</p>
+
+                <p id="choice5" class="link"><b>"Nahum, where's your family?"</b></p>
+
+              </div>
+
+              <div id="s6" class="scene">
+                <img src="IMG/nahum.png" class=img>
+                <p class="dec">Nahum looks at you, and you see no trace of recognition in your friend’s eyes.
+                  Still, he does his best to answer your question:</p>
+                 <p class="dec">"“Abby’s right mad… had to lock ‘er up… and the boys…
+                   Thad’s gone… Mernie’s gone… couldn’t find a trace of ‘em… up in the attic…
+                   Zenas went to get water an’ never come back… just like th’ pigs an’ cows,
+                   all rotted and grey… can’t find the attic keys to feed her… living in the well…
+                   with his brothers in the well…”"</p>
+
+                   <p id="choice6" class="link r"><b>Check the well.</b></p>
+                   <p class="link l choice7"><b>Check the attic.</b></p>
+
+                </div>
+
+            <div id="s7" class="scene">
+              <img src="IMG/yardwkey.png" class=img>
+              <p class="dec">You decide to take a look at the well. As you look across the barren garden,
+                you notice something shiny in the grass by one of the trees.</p>
+
+                <p id="choice8" class="link l"><b>Examine it.</b></p>
+                <p class="link r choice9"><b>Continue to the well.</b></p>
+
+              </div>
+              <div id="s8" class="scene">
+                <img src="IMG/keys.png" class=img>
+                <p class="dec">You walk over to the shiny thing and pick it up. It’s a rusty ring of keys.
+                  There’s a wooden tag attached to it with the word “ATTIC” carved into it.</p>
+
+                  <p id="choice10" class="link"><b>Take it.</b></p>
+
+                </div>
+
+                <div id="s9" class="scene">
+                  <img src="IMG/yard.png" class=img>
+                  <p class="dec">You slide the key into your pants pocket.</p>
+
+                  <p  class="link l choice7"><b>Check the attic.</b></p>
+                  <p  class="link r choice9"><b>Continue to the well.</b></p>
+
+                  </div>
+
+                  <div id="s10" class="scene">
+                    <img src="IMG/well.png" class=img>
+                    <p class="dec">You walk over to the well. A rotten smell is emanating from it.</p>
+
+                      <p id="choice11" class="link"><b>Look closer.</b></p>
+
+                    </div>
+
+        <div id="s11" class="scene">
+        <img src="IMG/well.gif" class=img>
+
+
+        </div>
+
+
+        <div id="s13" class="scene">
+          <img src="IMG/door.png" class=img>
+          <p class="dec">You decide to go see what’s in the attic.
+            You climb the stairs and are greeted with a small door.</p>
+
+          <p  id="choice12" class="link"><b>Open it.</b></p>
+
+
+          </div>
+
+          <div id="s14" class="scene">
+            <img src="IMG/door.png" class=img>
+            <p class="dec">It's locked.</p>
+
+            <p  id="choice13" class="link"><b>Look through the keyhole.</b></p>
+
+
+            </div>
+
+            <div id="s15" class="scene">
+              <img src="IMG/attic.png" class=img>
+              <p class="dec">You use the key to open the door.
+                A warm breeze blows past you as you enter the room.</p>
+                <p class="dec">Something is moving in the darkest corner of the room.
+                  It might have been human once. Its body is crumbling apart,
+                  and the smell is unbearable. It notices your entry, and begins to approach.</p>
+
+              <p  id="choice14" class="link l"><b>"...Abby?"</b></p>
+              <p  id="choice15" class="link r"><b>Kill it.</b></p>
+
+
+              </div>
+
+      <div id="s18" class="scene">
+        <img src="IMG/keyhole.png" class=img>
+        <p class="dec">You peer into the keyhole.</p>
+
+        <p  id="choice17" class="link"><b>Keep looking.</b></p>
+
+
+        </div>
+
+        <div id="s19" class="scene">
+          <img src="IMG/keyholeeye.png" class=img>
+          <p class="dec">...Something looks back at you.</p>
+
+          <p  id="choice18" class="link"><b>Hold still.</b></p>
+
+
+          </div>
+
+          <div id="s20" class="scene">
+            <img src="IMG/keyholecloud.png" class=img>
+            <p class="dec">A foul-smelling breeze wafts through the keyhole,
+              making you cough and gag.</p>
+
+            <p  id="choice19" class="link"><b>Look down at your hands.</b></p>
+
+
+            </div>
+
+            <div id="s21" class="scene">
+              <img src="IMG/hand1.png" class=img>
+              <p class="dec">You feel peculiar. Looking down at your hands, you see that your flesh has gone a greyish color.
+                It spreads up your arms, which are already beginning to rot. </p>
+
+              <p  id="choice20" class="link"><b>Scream.</b></p>
+
+
+              </div>
+
+              <div id="s22" class="scene">
+                <img src="IMG/hand2.png" class=img>
+                <p class="dec">You open your mouth to scream,
+                   but the color has already reached your head… </p>
+
+                </div>
+
+              <div id="s16" class="scene">
+                <img src="IMG/abby.png" class=img>
+                <p class="dec">The... thing hesitates.</p>
+
+                <p  id="choice16" class="link"><b>Move closer.</b></p>
+
+
+                </div>
+
+                <div id="s17" class="scene">
+                <img src="IMG/attic.gif" class=img>
+
+
+                </div>
+
+
+
+                <div id="s23" class="scene">
+                  <img src="IMG/punch.png" class=img>
+                  <p class="dec">You punch the creature in what you presume is the head, and your fist sinks into its body. When you withdraw your hand,
+                    it is covered in viscera, which is quickly absorbed into your skin.</p>
+
+                  <p  id="choice21" class="link"><b>Look at your hand.</b></p>
+
+
+                  </div>
+
+                  <div id="s24" class="scene">
+                    <img src="IMG/hand3.png" class=img>
+                    <p class="dec">You feel peculiar. Looking down at your hands, you see that your flesh has gone a greyish color.
+                      It spreads up your arms, which are already beginning to rot. </p>
+
+                    <p  id="choice22" class="link"><b>Scream.</b></p>
+
+
+                    </div>
+
+                    <div id="s25" class="scene">
+                      <img src="IMG/hand4.png" class=img>
+                      <p class="dec">You open your mouth to scream,
+                         but the color has already reached your head… </p>
+
+                      </div>
+
+                      <div id="s26" class="scene">
+                        <img src="IMG/kill.png" class=img>
+                        <p class="dec">You strike the creature with the tree branch from outside.
+                          It crumbles away into dust.</p>
+                          <p class="dec">...</p>
+                          <p class="dec">You heard something downstairs.</p>
+
+                        <p  id="choice23" class="link"><b>Go downstairs</b></p>
+
+
+                        </div>
+
+                    <div id="s27" class="scene">
+                      <img src="IMG/downstairs.png" class=img>
+                      <p class="dec">You return to the ground floor. Nahum is crawling towards you. You couldn’t have been away from him for more than 20 minutes, but he is already well on his way
+                        to becoming what was in the attic.
+                        His body is falling to pieces before your eyes.</p>
+
+                      <p  id="choice24" class="link l"><b>"What did this to you?"</b></p>
+                      <p  id="choice25" class="link r"><b>Kill him.</b></p>
+
+
+                      </div>
+
+                      <div id="s28" class="scene">
+                        <img src="IMG/killna.png" class=img>
+                        <p class="dec">You bash Nahum’s skull in using the tree branch. </p>
+
+                        <p  id="choice26" class="link"><b>Inspect the corpse</b></p>
+
+
+                        </div>
+
+                        <div id="s29" class="scene">
+                          <img src="IMG/ncloud.png" class=img>
+                          <p class="dec">As you lean over his body to inspect it, a foul-smelling cloud arises from his body,
+                            making you cough and gag.</p>
+
+                          <p  id="choice27" class="link"><b>Look down at your hands.</b></p>
+
+
+                          </div>
+
+                          <div id="s30" class="scene">
+                            <img src="IMG/hand5.png" class=img>
+                            <p class="dec">You feel peculiar. Looking down at your hands, you see that your flesh has gone a greyish color.
+                              It spreads up your arms, which are already beginning to rot. </p>
+
+                            <p  id="choice28" class="link"><b>Scream.</b></p>
+
+
+                            </div>
+
+                            <div id="s31" class="scene">
+                              <img src="IMG/hand6.png" class=img>
+                              <p class="dec">You open your mouth to scream,
+                                 but the color has already reached your head… </p>
+
+                              </div>
+
+                              <div id="s32" class="scene">
+                                <img src="IMG/nahum2.png" class=img>
+                                <p class="dec">Nahum’s mouth creaks open.</p>
+
+                                <p class="dec">“Nothin’... nothin’... the colour…
+                                  it burns… cold an’ wet ... but it burns… it lived in the well…
+                                  I seen it… a kind o’ smoke… jest like the flowers last spring … the well shone at night…
+                                  Thad an’ Mernie an’ Zenas… everything alive…  suckin’ the life out of everything …
+                                  in that stone… it must a’ come in that stone… pizened the whole place…
+                                  dun’t know what it wants… It was that same color… I seen it again and again… Can’t get away… it draws ye… ye know something’s coming, but it ain’t no use…
+                                  Look out… it’ll suck the life outta ye too…”</p>
+
+                                <p  id="choice29" class="link"><b>Keep listening.</b></p>
+
+
+                                </div>
+
+                        <div id="s33" class="scene">
+                          <img src="IMG/cavein.png" class=img>
+                          <p class="dec">Nahum’s face caves in, and he speaks no more.
+                            His body collapses to the ground, unmoving.</p>
+
+                          <p  id="choice30" class="link"><b>Pay your respects.</b></p>
+
+                        </div>
+
+                        <div id="s34" class="scene">
+                          <img src="IMG/tablecloth.png" class=img>
+                          <p class="dec">You cover that which used to be your friend with a tablecloth
+                          and, shaken, head for home.</p>
+
+                          <a href="final.html"><p  id="choice31" class="link"><b>Continue.</b></p></a>
+
+                        </div>
+
+
+
+
+                          <div id="s12" class="scene">
+                          <img src="IMG/b2.png" class=img>
+                          <p id="choicedie" class="link"><b>Retry.</b></p>
+
+                          </div>
+
+
+
+
+
+
+
+  </body>
+</html>

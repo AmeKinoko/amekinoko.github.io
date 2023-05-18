@@ -1,0 +1,109 @@
+
+  body{
+    background: url("IMG/bg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    margin: 0px;
+  }
+
+  #blackbox{
+    background-color: black;
+    width: 60vw;
+    height: 100vh;
+
+    position: fixed;
+    left: 20vw;
+    display: inline-block;
+    text-align: center;
+  }
+
+  #texts {
+    width: 60vw;
+    height: 100vh;
+    margin: 0px;
+    position: relative;
+    left: 20vw;
+
+
+  }
+
+  #hdd {
+    position: relative;
+    top: 3vh;
+    width: 55vw;
+  }
+
+  #hdd:hover {
+    opacity: 0.5;
+  }
+
+  p {
+    font-family: courier;
+    color: #D3D3D3;
+    font-size: 15pt;
+    font-style:italic;
+  }
+
+  .link {
+    color: #D3D3D3;
+    
+  }
+
+  .link:hover {
+      opacity: 0.5;
+
+  }
+
+  #first {
+
+    padding-top: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 3%;
+
+    position: relative;
+    text-align: center;
+  }
+
+  #second {
+
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 3%;
+    position: relative;
+    text-align: center;
+  }
+
+  #third {
+
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 3%;
+    position: relative;
+    text-align: center;
+  }
+  #fourth {
+
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 3%;
+    position: relative;
+    text-align: center;
+  }
+  #fifth {
+
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 3%;
+    position: relative;
+    text-align: center;
+  }
+
+  #cont {
+    font-size: 30pt;
+    text-decoration: underline;
+    margin-bottom: 5%;
+  }

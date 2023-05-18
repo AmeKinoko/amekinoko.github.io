@@ -1,0 +1,110 @@
+html,
+body {
+  background-color: #c468ff;
+}
+
+.container-fluid {
+  background-color: #c468ff;
+}
+
+#mainHolder {
+  height: 500px;
+  position: relative;
+}
+
+#canvasHolder {
+  /* width: 30vw; */
+  height: 100%;
+  /* left: 5vw;
+  top: 25vh; */
+}
+
+#videoHolder {
+  /* width: 30vw; */
+  height: 100%;
+  /* left: 45vw;
+  top: 25vh; */
+}
+
+#handbox {
+  position: relative;
+}
+
+#handbox img {
+  width: 60%;
+}
+
+.handCard {
+  position: relative;
+}
+
+#handbox:hover .hand {
+  opacity: 0;
+}
+
+#handbox:hover .text {
+  opacity: 1;
+}
+
+.textbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.hand {
+  transition: 0.5s;
+}
+
+.text {
+  opacity: 0;
+  transition: 0.5s;
+}
+#title {
+  font-size: 30pt;
+}
+
+#extra {
+  font-size: 30pt;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 20;
+}
+
+#aboutText {
+  font-size: 20pt;
+  width: 100%;
+  height: 100%;
+  top: 25%;
+
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  z-index: 21;
+}
+
+.words {
+  font-family: "Indie Flower";
+  color: #f1daff;
+}
+
+#about-click:hover {
+  cursor: pointer;
+}
+
+#about-click {
+  z-index: 10;
+}
